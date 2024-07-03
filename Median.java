@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public class Median {
     public static double median(int[] a, int[] b) {
@@ -5,7 +7,7 @@ public class Median {
     int n1 = a.length;
     int n2 = b.length;
 
-    List<Integer> arr3 = new ArrayList<>();
+    List<Integer> arr3 = new ArrayList<Integer>();
     // Apply the merge step
     int i = 0, j = 0, k = 0;
     while (i < n1 && j < n2) {
@@ -18,13 +20,14 @@ public class Median {
 
     // Copy the left-out elements
     //Yes
+    System.out.println(i);
     while (i < n1) {
         arr3.add(a[i++]);
     }
     while (j < n2) {
         arr3.add(b[j++]);
     }
-
+    System.out.println(arr3);
     // Find the median
     int n = n1 + n2;
     if (n % 2 == 1) {
@@ -37,13 +40,8 @@ public class Median {
 
 public static void main(String[] args) {
     int[] a = {1, 4, 7, 10, 12};
-    int[] b = {2, 3, 6, 15};
+    int[] b = {2, 3, 5,6, 15};
     System.out.println("The median of two sorted arrays is " + median(a, b));
 }
-//dfdsf
-//rfhioewioqefdu
-//kjfofuefkfnj
-
-//lwjfioewfeoifjef
 }
 

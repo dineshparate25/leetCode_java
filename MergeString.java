@@ -1,5 +1,5 @@
 // Java code to alternatively merge two strings 
-public class mergeString { 
+public class MergeString { 
   
     // Function for alternatively merging two strings 
     public static String merge(String s1, String s2) 
