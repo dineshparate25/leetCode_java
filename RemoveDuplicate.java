@@ -16,6 +16,7 @@ class RemoveDuplicate
         // print the string after removing duplicate characters   
         for(Character ch : set)   
             System.out.print(ch);   
+            //kjndd
     }   
         
     //main() method start  
