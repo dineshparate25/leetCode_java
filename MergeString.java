@@ -31,4 +31,5 @@ public class mergeString {
         String s2 = "forgeeks"; 
         System.out.println(merge(s1, s2)); 
     } 
+    //No data chabfes
 } 
